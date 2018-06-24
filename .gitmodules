@@ -2,7 +2,3 @@
 	path = nasa
 	url = https://github.com/jackrobbins1/nasa.git
 
-
-[submodule "draww"]
-	path = draww
-	url = https://github.com/jackrobbins1/draw.git
