@@ -1,7 +1,5 @@
 [submodule "nasa"]
 	path = nasa
 	url = https://github.com/jackrobbins1/nasa.git
-[submodule "draw"]
-	path = draw
-	url = git@github.com:jackrobbins1/draw.git
+
 
