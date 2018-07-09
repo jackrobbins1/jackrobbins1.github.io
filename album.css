@@ -1,0 +1,131 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.btn-sample { 
+  color: #ffffff; 
+  background-color: #7952B3; 
+  border-color: #7952B3; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #ffffff; 
+  background-color: #614092; 
+  border-color: #7952B3; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #7952B3; 
+  border-color: #7952B3; 
+} 
+ 
+.btn-sample .badge { 
+  color: #7952B3; 
+  background-color: #ffffff; 
+}
+
+.btn-email { 
+  color: #FFFFFF; 
+  background-color: #2ECC71; 
+  border-color: #2ECC71; 
+} 
+ 
+.btn-email:hover, 
+.btn-email:focus, 
+.btn-email:active, 
+.btn-email.active, 
+.open .dropdown-toggle.btn-email { 
+  color: #FFFFFF; 
+  background-color: #27AE60; 
+  border-color: #2ECC71; 
+} 
+ 
+.btn-email:active, 
+.btn-email.active, 
+.open .dropdown-toggle.btn-email { 
+  background-image: none; 
+} 
+ 
+.btn-email.disabled, 
+.btn-email[disabled], 
+fieldset[disabled] .btn-email, 
+.btn-email.disabled:hover, 
+.btn-email[disabled]:hover, 
+fieldset[disabled] .btn-email:hover, 
+.btn-email.disabled:focus, 
+.btn-email[disabled]:focus, 
+fieldset[disabled] .btn-email:focus, 
+.btn-email.disabled:active, 
+.btn-email[disabled]:active, 
+fieldset[disabled] .btn-email:active, 
+.btn-email.disabled.active, 
+.btn-email[disabled].active, 
+fieldset[disabled] .btn-email.active { 
+  background-color: #2ECC71; 
+  border-color: #2ECC71; 
+} 
+ 
+.btn-email .badge { 
+  color: #2ECC71; 
+  background-color: #FFFFFF; 
+}

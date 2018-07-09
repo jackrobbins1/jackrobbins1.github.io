@@ -1,86 +1,142 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
 
-    <!-- Bootstrap CSS -->
+    <title>Jackson Robbins</title>
+
+    <!--Script for copying email-->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+    <link src="css/jacks_css.css">
+
+    <!--For popovers-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   </head>
+
   <body>
 
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <a class="navbar-brand" href="#">Jackson Robbins</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
 
-    <main class="container">
-      <div class="jumbotron">
-        <h1>Hello, world!</h1>
-        <p class="lead">I build things and I do stuff.</p>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Jackson Robbins</h1>
+          <p class="lead text-muted">
+            Full stack coding bootcamp graduate with more than 5 years of experience working with customers from industries that include technology, digital marketing, restaurant / hospitality, and beer. Curious lifelong learner who enjoys studying complex systems and creative problem solving.</p>
+          <p>
+            <a href="https://www.linkedin.com/in/jacksonrobbins606/" class="btn btn-primary my-2">My LinkedIn</a>
+            <a href="resume.html" class="btn btn-sample my-2">My Resume</a>
+            <button href="#" class="btn btn-email my-2" id="btncopy" tabindex="0" data-toggle="popover" data-clipboard-text="jackson@jacksonr.com" data-placement="bottom" data-content="Copied! jackson@jacksonr.com">
+              Email Me
+            </button>
+            <script>
+              var btn = document.getElementById('btncopy');
+              var clipboard = new ClipboardJS(btn);
+              clipboard.on('success', function(e) {
+                  console.log(e);
+              });
+              clipboard.on('error', function(e) {
+                  console.log(e);
+              });
+            </script>
+            <script>
+                $(document).ready(function(){
+                    $('[data-toggle="popover"]').popover(); 
+                });
+            </script>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/drawappfinalok.png" alt="draw app image">
+                <div class="card-body">
+                  <h5 class="card-title">Draw App</h5>
+                  <p class="card-text">A simple draw program written in vanilla JavaScript.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a type="button" class="btn btn-sm btn-outline-secondary" href="draw1/index.html">Demo</a>
+                      <a type="button" class="btn btn-sm btn-outline-secondary" href="https://github.com/jackrobbins1/draw">Code</a>
+                    </div>
+                    <small class="text-muted">HTML5 Canvas, CSS, JavaScript</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/nasaappfin.png" alt="nasa app image">
+                <div class="card-body">
+                  <h5 class="card-title">NASA - APOD</h5>
+                  <p class="card-text">A web application using jQuery to pull random pics from Nasa's APOD API.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a type="button" class="btn btn-sm btn-outline-secondary" href="nasa/index.html">Demo</a>
+                      <a type="button" class="btn btn-sm btn-outline-secondary" href="https://github.com/jackrobbins1/nasa">Code
+                      </a>
+                    </div>
+                    <small class="text-muted">jQuery, HTML, CSS, JavaScript</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/CPGimage1.png" alt="work in progress image">
+                <div class="card-body">
+                  <h5 class="card-title">Health Challenge Tracker</h5>
+                  <p class="card-text">A web application for tracking nutrition and fitness with points.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a type="button" class="btn btn-sm btn-outline-secondary" href="https://github.com/jackrobbins1/cpg">Code</a>
+                    </div>
+                    <small class="text-muted">Angular, HTML, MDL</small>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!--This is the first row of cards-->
+
+          </div>
+        </div>
       </div>
 
     </main>
 
-    <div class="row">
-       <div class="col">
-         <div class="card">
-           <div class="card-body">
-                   <h5>NASA - APOD</h5>
-      <h6 class="card-subtitle text-muted">jQuery, HTML, CSS, JavaScript</h6>
-      <p class="card-text">
-        A web application using jQuery to pull random pics from Nasa's APOD API.
-      </p>
-      <a href="nasa" class="card-link">Demo</a>
-      <a href="https://github.com/jackrobbins1/nasa" class="card-link">Code</a>
-           </div>
-         </div>
-       </div>
-       <div class="col">&nbsp;</div>
-       <div class="col">&nbsp;</div>
-    </div>
-    
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-                  <h5>Draw App</h5>
-     <h6 class="card-subtitle text-muted">jQuery, HTML, CSS, JavaScript</h6>
-     <p class="card-text">
-        A simple draw program written in vanilla JavaScript.
-     </p>
-     <a href="draw1/index.html" class="card-link">Demo</a>
-     <a href="https://github.com/jackrobbins1/draw" class="card-link">Code</a>
-          </div>
-        </div>
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a class="btn btn-link" href="#">Back To Top</a>
+        </p>
+        <p><small>Created with Github Pages and Bootstrap</small></p>
+        <p><small>Jackson Robbins 2018</small></p>
       </div>
-      <div class="col">&nbsp;</div>
-      <div class="col">&nbsp;</div>
-    </div>
-    
+    </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
