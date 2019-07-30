@@ -32,7 +32,6 @@
 
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
-    <link src="css/jacks_css.css">
 
     <!--For popovers-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -59,7 +58,7 @@
               Full stack web developer
           </p>
           <p class="lead text-muted">
-              5+ years of experience: technology, digital marketing,
+              <span id="years-exp"></span>+ years of experience: technology, digital marketing,
               hospitality, and the beer industry
           </p>
           <p class="lead text-muted">
@@ -67,26 +66,31 @@
               and creative problem solver
           </p>
           <p>
-            <a href="https://www.linkedin.com/in/jacksonrobbins606/" class="btn btn-primary my-2">My LinkedIn</a>
-            <a href="resume.html" class="btn btn-sample my-2">My Resume</a>
-            <button href="#" class="btn btn-email my-2" id="btncopy" tabindex="0" data-toggle="popover" data-clipboard-text="jackson@jacksonr.com" data-placement="bottom" data-content="Copied! jackson@jacksonr.com">
-              &nbsp;Email Me&nbsp;
-            </button>
-            <script>
-              var btn = document.getElementById('btncopy');
-              var clipboard = new ClipboardJS(btn);
-              clipboard.on('success', function(e) {
-                  console.log(e);
-              });
-              clipboard.on('error', function(e) {
-                  console.log(e);
-              });
-            </script>
-            <script>
-                $(document).ready(function(){
-                    $('[data-toggle="popover"]').popover(); 
+            <div class="btn-container top-btn">
+              <a href="https://www.linkedin.com/in/jacksonrobbins606/" class="btn btn-primary my-btn">My LinkedIn</a>
+              <a href="resume.html" class="btn btn-sample my-btn">My Resume</a>
+            </div>
+            <div class="btn-container">
+              <a href="https://medium.com/@jackrobbins1" class="btn btn-danger my-btn">My Articles</a>
+              <button href="#" class="btn btn-success my-btn" id="btncopy" tabindex="0" data-toggle="popover" data-clipboard-text="jackson@jacksonr.com" data-placement="bottom" data-content="Copied! jackson@jacksonr.com">
+                &nbsp;Email Me&nbsp;
+              </button>
+              <script>
+                var btn = document.getElementById('btncopy');
+                var clipboard = new ClipboardJS(btn);
+                clipboard.on('success', function(e) {
+                    console.log(e);
                 });
-            </script>
+                clipboard.on('error', function(e) {
+                    console.log(e);
+                });
+              </script>
+              <script>
+                  $(document).ready(function(){
+                      $('[data-toggle="popover"]').popover(); 
+                  });
+              </script>
+            </div>
           </p>
         </div>
       </section>
@@ -197,6 +201,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script>document.getElementById('years-exp').innerText = new Date().getFullYear() - 2013</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

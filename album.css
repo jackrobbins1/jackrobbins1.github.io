@@ -137,6 +137,69 @@ fieldset[disabled] .btn-email.active {
   background-color: #FFFFFF; 
 }
 
-.smallScreenText {
+.btn-article { 
+  color: #FFFFFF; 
+  background-color: #e53935; 
+  border-color: #e53935; 
+} 
+ 
+.btn-article:hover, 
+.btn-article:focus, 
+.btn-article:active, 
+.btn-article.active, 
+.open .dropdown-toggle.btn-article { 
+  color: #FFFFFF; 
+  background-color: #e53935; 
+  border-color: #e53935; 
+} 
+ 
+.btn-article:active, 
+.btn-article.active, 
+.open .dropdown-toggle.btn-article { 
+  background-image: none; 
+} 
+ 
+.btn-article.disabled, 
+.btn-article[disabled], 
+fieldset[disabled] .btn-article, 
+.btn-article.disabled:hover, 
+.btn-article[disabled]:hover, 
+fieldset[disabled] .btn-article:hover, 
+.btn-article.disabled:focus, 
+.btn-article[disabled]:focus, 
+fieldset[disabled] .btn-article:focus, 
+.btn-article.disabled:active, 
+.btn-article[disabled]:active, 
+fieldset[disabled] .btn-article:active, 
+.btn-article.disabled.active, 
+.btn-article[disabled].active, 
+fieldset[disabled] .btn-article.active { 
+  background-color: #f44336; 
+  border-color: #f44336; 
+} 
+ 
+.btn-article .badge { 
+  color: #f44336; 
+  background-color: #FFFFFF; 
+}
 
+small {
+  text-align: center;
+}
+
+.btn-container {
+  display: inline;
+}
+
+.my-btn {
+  width: 110px;
+}
+
+@media (max-width: 529px) {
+  .top-btn {
+    margin-bottom: 15px;
+  }
+  .btn-container {
+    display: block;
+  }
 }
