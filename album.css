@@ -3,18 +3,13 @@
 }
 
 .jumbotron {
-  padding-top: calc(var(--jumbotron-padding-y) * 0.75);
+  padding-top: calc(var(--jumbotron-padding-y) * 0.30);
   padding-bottom: calc(var(--jumbotron-padding-y) * 0.50);
   margin-bottom: 0;
-  background-color: #fff;
+  padding-right: 50%;
+  background-color: transparent;
 }
 
-/* .jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: #fff;
-} */
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 1);
@@ -27,7 +22,7 @@
 }
 
 .jumbotron-heading {
-  font-weight: 300;
+  font-weight: 340;
 }
 
 .jumbotron .container {
@@ -195,11 +190,193 @@ small {
   width: 110px;
 }
 
-@media (max-width: 529px) {
+@media (max-width: 1045px) {
   .top-btn {
     margin-bottom: 15px;
   }
   .btn-container {
     display: block;
+  }
+}
+
+.my-projects {
+  text-align: center;
+  padding: 1.3rem 0 0.9rem 0;
+  font-weight: 400;
+}
+
+
+@media (max-width: 350px) {
+  .lead {
+    font-size: 1rem;
+  }
+  .jumbotron-heading {
+    font-size: 2rem;
+  }
+}
+
+.jumbo-container {
+  height: 100%;
+
+  background-image:
+    linear-gradient(to bottom,#a5a5a5, #f0f0f0),
+
+    radial-gradient(circle farthest-corner at right,
+    rgb(215,213,214,0), rgb(215,213,214,0),
+    rgb(215,213,214,0), rgb(215,213,214,0),
+    rgb(215,213,214,0), rgb(215,213,214,0),
+    rgb(215,213,214,0.7), rgb(215,213,214,0.98),
+    rgb(215,213,214,1), rgb(215,213,214,1),
+    rgb(215,213,214,1), rgb(215,213,214,1),
+    rgb(215,213,214,1), rgb(215,213,214,1),
+    rgb(215,213,214,1), rgb(215,213,214,1)),
+
+    url('/images/jack_lands_end.jpg');
+  background-size: 100% 5px, 100% 100%, 50% auto;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 100%, 0%, 30%;
+  background-position-x: 0%, 0%, 100%;
+}
+
+.main-container {
+  height: 358px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "grid-left grid-right"
+}
+
+.left-box {
+  text-align: center;
+  grid-area: grid-left;
+}
+
+.right-box {
+  grid-area: grid-right;
+  height: 100%;
+  overflow: hidden;
+}
+
+.right-box img {
+  height: 200%;
+  width: auto;
+  transform: translate(0, -15%);
+}
+
+.bg-my-color {
+  background-color: #f0f0f0 !important;
+}
+
+.weighted-text {
+  font-weight: 400;
+}
+
+.desktop-show {
+  visibility: visible;
+}
+
+.text-small {
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  /* .jumbotron {
+    padding-right: 16px;
+  } */
+  .jumbotron {
+    padding-right: 40%;
+  }
+
+  .jumbo-container {  
+    background-image:
+      linear-gradient(to bottom,#a5a5a5, #f0f0f0),
+  
+      radial-gradient(circle farthest-corner at right,
+      rgb(215,213,214,0), rgb(215,213,214,0),
+      rgb(215,213,214,0), rgb(215,213,214,0),
+      rgb(215,213,214,0), rgb(215,213,214,0.7),
+      rgb(215,213,214,1), rgb(215,213,214,1),
+      rgb(215,213,214,1), rgb(215,213,214,1),
+      rgb(215,213,214,1), rgb(215,213,214,1),
+      rgb(215,213,214,1), rgb(215,213,214,1),
+      rgb(215,213,214,1), rgb(215,213,214,1)),
+  
+      url('/images/jack_lands_end.jpg');
+    background-size: 100% 5px, 100% 100%, 50% auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 100%, 0%, 30%;
+    background-position-x: 0%, 0%, 100%;
+  }
+
+  .weighted-text {
+    font-size: 1.4rem;
+  }
+
+  .text-small {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .jumbo-container {
+    background-image:
+      linear-gradient(to bottom,#a5a5a5, #f0f0f0),
+  
+      radial-gradient(circle farthest-corner at right,
+      rgb(215,213,214,0), rgb(215,213,214,0),
+      rgb(215,213,214,0), rgb(215,213,214,0),
+      rgb(215,213,214,0), rgb(215,213,214,0),
+      rgb(215,213,214,0.7), rgb(215,213,214,1),
+      rgb(215,213,214,1), rgb(215,213,214,1),
+      rgb(215,213,214,1), rgb(215,213,214,1),
+      rgb(215,213,214,1), rgb(215,213,214,1),
+      rgb(215,213,214,1), rgb(215,213,214,1)),
+  
+      url('/images/jack_lands_end.jpg');
+
+    background-size: 100% 5px, 100% 100%, auto 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 100%, 0%, 30%;
+    background-position-x: 0%, 0%, 105%;
+  }
+}
+
+@media (max-width: 500px) {
+  .jumbotron {
+    padding-right: 16px;
+  }
+
+  .jumbotron-heading {
+    margin-bottom: 0;
+  }
+
+  .jumbo-container {
+    background-image:
+      linear-gradient(to bottom,#a5a5a5, #f0f0f0),
+      url('/images/jack_lands_end.jpg');
+
+    background-size: 100% 5px, 100% auto;
+    background-position-y: 100%, 10%;
+    background-position-x: 0%, 100%;
+  }
+
+  .weighted-text {
+    text-align: center;
+  }
+
+  .desktop-show {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 350px) {
+  .jumbo-container {
+    height: 100%;
+    background-size: 100% 5px, cover;
   }
 }

@@ -44,59 +44,68 @@
 
 
     <main role="main">
+      <div class="container-container">
 
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Jackson Robbins</h1>
-          <!-- <p class="lead text-muted">
-              Full stack web developer with more than 5 years of experience working in
-              industries that include technology, digital marketing,
-              hospitality, and beer. I'm a lifelong learner who enjoys studying complex systems
-              and creative problem solving.
-          </p> -->
-          <p class="lead text-muted">
-              Full stack web developer
-          </p>
-          <p class="lead text-muted">
-              <span id="years-exp"></span>+ years of experience: technology, digital marketing,
-              hospitality, and the beer industry
-          </p>
-          <p class="lead text-muted">
-              Lifelong learner
-              and creative problem solver
-          </p>
-          <p>
-            <div class="btn-container top-btn">
-              <a href="https://www.linkedin.com/in/jacksonrobbins606/" class="btn btn-primary my-btn">My LinkedIn</a>
-              <a href="resume.html" class="btn btn-sample my-btn">My Resume</a>
+        <div class="jumbo-container">
+  
+          <!-- <img src="images/jack_lands_end.jpg" alt="jack at land's end" class="my-image"> -->
+  
+          <section class="jumbotron text-center">
+            <div class="container">
+              <h1 class="jumbotron-heading">Jackson Robbins</h1>
+              <!-- <p class="lead text-muted">
+                  Full stack web developer with more than 5 years of experience working in
+                  industries that include technology, digital marketing,
+                  hospitality, and beer. I'm a lifelong learner who enjoys studying complex systems
+                  and creative problem solving.
+              </p> -->
+              <p class="lead text-dark weighted-text">
+                  Full Stack Web Developer
+              </p>
+              <p class="lead text-dark weighted-text desktop-show text-small">
+                  <span id="years-exp"></span>+ years of experience: technology, digital marketing,
+                  hospitality, and the beer industry
+              </p>
+              <p class="lead text-dark weighted-text desktop-show text-small">
+                  Lifelong learner
+                  and creative problem solver
+              </p>
+              <p>
+                <div class="btn-container top-btn">
+                  <a href="https://www.linkedin.com/in/jacksonrobbins606/" class="btn btn-primary my-btn">My LinkedIn</a>
+                  <a href="resume.html" class="btn btn-sample my-btn">My Resume</a>
+                </div>
+                <div class="btn-container">
+                  <a href="https://medium.com/@jackrobbins1" class="btn btn-danger my-btn">My Articles</a>
+                  <button href="#" class="btn btn-success my-btn" id="btncopy" tabindex="0" data-toggle="popover" data-clipboard-text="jackson@jacksonr.com" data-placement="bottom" data-content="Copied! jackson@jacksonr.com">
+                    &nbsp;Email Me&nbsp;
+                  </button>
+                  <script>
+                    var btn = document.getElementById('btncopy');
+                    var clipboard = new ClipboardJS(btn);
+                    clipboard.on('success', function(e) {
+                        console.log(e);
+                    });
+                    clipboard.on('error', function(e) {
+                        console.log(e);
+                    });
+                  </script>
+                  <script>
+                      $(document).ready(function(){
+                          $('[data-toggle="popover"]').popover(); 
+                      });
+                  </script>
+                </div>
+              </p>
             </div>
-            <div class="btn-container">
-              <a href="https://medium.com/@jackrobbins1" class="btn btn-danger my-btn">My Articles</a>
-              <button href="#" class="btn btn-success my-btn" id="btncopy" tabindex="0" data-toggle="popover" data-clipboard-text="jackson@jacksonr.com" data-placement="bottom" data-content="Copied! jackson@jacksonr.com">
-                &nbsp;Email Me&nbsp;
-              </button>
-              <script>
-                var btn = document.getElementById('btncopy');
-                var clipboard = new ClipboardJS(btn);
-                clipboard.on('success', function(e) {
-                    console.log(e);
-                });
-                clipboard.on('error', function(e) {
-                    console.log(e);
-                });
-              </script>
-              <script>
-                  $(document).ready(function(){
-                      $('[data-toggle="popover"]').popover(); 
-                  });
-              </script>
-            </div>
-          </p>
+          </section>
         </div>
-      </section>
+      </div>
 
-      <h3 style="text-align: center">My Projects</h3>
-      <div class="album py-5 bg-light">
+      <!-- <h3 style="text-align: center" class="jumbotron-heading">My Projects</h3> -->
+      <!-- <div class="album py-5 bg-light"> -->
+      <div class="album pb-5 bg-my-color">
+        <h3 class="jumbotron-heading my-projects">My Projects</h3>
         <div class="container">
 
           <div class="row">
@@ -108,8 +117,8 @@
                     <p class="card-text">A web app for Chicago Primal Gym members to track their personal records and weigh-ins.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
-                        <a type="button" class="btn btn-sm btn-outline-secondary" href="https://jackrobbins1.github.io/primal_portal/">Demo</a>
-                        <a type="button" class="btn btn-sm btn-outline-secondary" href="https://github.com/jackrobbins1/primal_portal">Code</a>
+                        <a type="button" class="btn btn-sm btn-outline-dark" href="https://jackrobbins1.github.io/primal_portal/">Demo</a>
+                        <a type="button" class="btn btn-sm btn-outline-dark" href="https://github.com/jackrobbins1/primal_portal">Code</a>
                       </div>
                       <small class="text-muted">React, Material-UI, Ruby on Rails</small>
                     </div>
@@ -124,7 +133,7 @@
                   <p class="card-text">A web app for medical students to find internships with healthcare providers.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a type="button" class="btn btn-sm btn-outline-secondary" href="https://app.amopportunities.org/#/login">AMOpportunies.com</a>
+                      <a type="button" class="btn btn-sm btn-outline-dark" href="https://app.amopportunities.org/#/login">AMOpportunies.com</a>
                     </div>
                     <small class="text-muted">Ionic and Angular</small>
                   </div>
@@ -139,8 +148,8 @@
                   <p class="card-text">A simple draw program written in vanilla JavaScript.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a type="button" class="btn btn-sm btn-outline-secondary" href="draw1/index.html">Demo</a>
-                      <a type="button" class="btn btn-sm btn-outline-secondary" href="https://github.com/jackrobbins1/draw">Code</a>
+                      <a type="button" class="btn btn-sm btn-outline-dark" href="draw1/index.html">Demo</a>
+                      <a type="button" class="btn btn-sm btn-outline-dark" href="https://github.com/jackrobbins1/draw">Code</a>
                     </div>
                     <small class="text-muted">HTML5 Canvas, CSS, JavaScript</small>
                   </div>
@@ -155,8 +164,8 @@
                   <p class="card-text">A web app to pull random pics from Nasa's APOD API.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a type="button" class="btn btn-sm btn-outline-secondary" href="nasa/index.html">Demo</a>
-                      <a type="button" class="btn btn-sm btn-outline-secondary" href="https://github.com/jackrobbins1/nasa">Code
+                      <a type="button" class="btn btn-sm btn-outline-dark" href="nasa/index.html">Demo</a>
+                      <a type="button" class="btn btn-sm btn-outline-dark" href="https://github.com/jackrobbins1/nasa">Code
                       </a>
                     </div>
                     <small class="text-muted">jQuery, CSS, JavaScript</small>
