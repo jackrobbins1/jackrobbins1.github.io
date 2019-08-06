@@ -221,11 +221,11 @@ small {
   background-image:
     linear-gradient(to bottom,#a5a5a5, #f0f0f0),
 
-    radial-gradient(circle farthest-corner at right,
+    linear-gradient(to left,
     rgb(215,213,214,0), rgb(215,213,214,0),
     rgb(215,213,214,0), rgb(215,213,214,0),
     rgb(215,213,214,0), rgb(215,213,214,0),
-    rgb(215,213,214,0.7), rgb(215,213,214,0.98),
+    rgb(215,213,214,0.6), rgb(215,213,214,0.98),
     rgb(215,213,214,1), rgb(215,213,214,1),
     rgb(215,213,214,1), rgb(215,213,214,1),
     rgb(215,213,214,1), rgb(215,213,214,1),
@@ -294,11 +294,11 @@ small {
     background-image:
       linear-gradient(to bottom,#a5a5a5, #f0f0f0),
   
-      radial-gradient(circle farthest-corner at right,
+      linear-gradient(to left,
       rgb(215,213,214,0), rgb(215,213,214,0),
       rgb(215,213,214,0), rgb(215,213,214,0),
-      rgb(215,213,214,0), rgb(215,213,214,0.7),
-      rgb(215,213,214,1), rgb(215,213,214,1),
+      rgb(215,213,214,0), rgb(215,213,214,0),
+      rgb(215,213,214,0.7), rgb(215,213,214,1),
       rgb(215,213,214,1), rgb(215,213,214,1),
       rgb(215,213,214,1), rgb(215,213,214,1),
       rgb(215,213,214,1), rgb(215,213,214,1),
@@ -326,7 +326,7 @@ small {
     background-image:
       linear-gradient(to bottom,#a5a5a5, #f0f0f0),
   
-      radial-gradient(circle farthest-corner at right,
+      linear-gradient(to left,
       rgb(215,213,214,0), rgb(215,213,214,0),
       rgb(215,213,214,0), rgb(215,213,214,0),
       rgb(215,213,214,0), rgb(215,213,214,0),
