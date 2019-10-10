@@ -962,12 +962,15 @@ h6 {
     text-align: left
 }
 
-.work-header {
-    position: relative;
-}
+@media screen and (min-width: 575px) {
 
-.date-header {
-    position: absolute;
-    top: 3px;
-    right: 0;
+    .work-header {
+        position: relative;
+    }
+
+    .date-header {
+        position: absolute;
+        top: 2px;
+        right: 0;
+    }
 }
