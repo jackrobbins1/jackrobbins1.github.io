@@ -961,3 +961,13 @@ h6 {
     widows: 2;
     text-align: left
 }
+
+.work-header {
+    position: relative;
+}
+
+.date-header {
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
