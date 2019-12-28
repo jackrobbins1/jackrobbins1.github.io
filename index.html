@@ -92,7 +92,13 @@
                   </script>
                   <script>
                       $(document).ready(function(){
-                          $('[data-toggle="popover"]').popover(); 
+                          $('[data-toggle="popover"]').popover();
+
+                          $(document).on('click', function (e) {
+                            if ($(e.target).data('toggle') !== 'popover' && $(e.target).parents('.popover.in').length === 0) { 
+                              $('[data-toggle="popover"]').popover('hide');
+                            }
+                          });
                       });
                   </script>
                 </div>
@@ -103,7 +109,47 @@
       </div>
 
       <!-- <h3 style="text-align: center" class="jumbotron-heading">My Projects</h3> -->
-      <!-- <div class="album py-5 bg-light"> -->
+      <div class="album pb-5 bg-my-color">
+        <h3 class="jumbotron-heading my-projects">Professional Work</h3>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/AMOWebApp.png" alt="AMOpportunities Website image">
+                <div class="card-body">
+                  <h5 class="card-title">AMOpportunities</h5>
+                  <p class="card-text">A web app for medical students to find internships with healthcare providers.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a type="button" class="btn btn-sm btn-outline-dark" href="https://app.amopportunities.org/#/login">AMOpportunies.com</a>
+                    </div>
+                    <small class="text-muted">Ionic and Angular</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!--             <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/CPGimage1.png" alt="work in progress image">
+                <div class="card-body">
+                  <h5 class="card-title">Health Challenge Tracker</h5>
+                  <p class="card-text">A web application for tracking nutrition and fitness with points.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a type="button" class="btn btn-sm btn-outline-secondary" href="https://github.com/jackrobbins1/cpg">Code</a>
+                    </div>
+                    <small class="text-muted">Angular, HTML, MDL</small>
+                  </div>
+                </div>
+              </div>
+              </div> -->
+            </div>
+            <!--This is the first row of cards-->
+
+          </div>
+      </div>
+
       <div class="album pb-5 bg-my-color">
         <h3 class="jumbotron-heading my-projects">My Projects</h3>
         <div class="container">
@@ -192,7 +238,6 @@
             <!--This is the first row of cards-->
 
           </div>
-        </div>
       </div>
 
     </main>
