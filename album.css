@@ -231,7 +231,7 @@ small {
     rgb(215,213,214,1), rgb(215,213,214,1),
     rgb(215,213,214,1), rgb(215,213,214,1)),
 
-    url('/images/jack_lands_end.jpg');
+    url('./images/jack_lands_end.jpg');
   background-size: 100% 5px, 100% 100%, 50% auto;
   background-repeat: no-repeat;
   background-position: right;
