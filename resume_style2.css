@@ -19,7 +19,7 @@
 }
 
 .skills-list > div {
-  margin-bottom: var(--size-1);
+  margin-bottom: var(--size-2);
 }
 
 .skills-list > div:last-of-type {
