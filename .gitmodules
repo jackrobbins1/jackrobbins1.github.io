@@ -1,10 +1,12 @@
 [submodule "nasa"]
 	path = nasa
 	url = https://github.com/jackrobbins1/nasa.git
-
 [submodule "draw1"]
 	path = draw1
 	url = https://github.com/jackrobbins1/draw.git
 [submodule "primal_portal"]
 	path = primal_portal
 	url = https://github.com/jackrobbins1/primal_portal
+[submodule "jack_resume"]
+	path = jack_resume
+	url = https://github.com/jackrobbins1/jackrobbins1_resume_template.git
